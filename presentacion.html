@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header with Hamburger Menu -->
     <header>
-        <nav>
-            <h1>Curso de Canto</h1>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="objetivos.html">Objetivos</a></li>
-                <li><a href="estrategias.html">Estrategias</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="contenidos.html">Contenidos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Curso de Canto</h1>
+              </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="objetivos.html">Objetivos</a></li>
+                    <li><a href="estrategias.html">Estrategias</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="contenidos.html">Contenidos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
     </header>
+  
 
 <!-- Hero Section -->
 <div class="hero">
@@ -79,5 +89,6 @@
     <footer>
         <p>© 2024 Curso de Canto. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
