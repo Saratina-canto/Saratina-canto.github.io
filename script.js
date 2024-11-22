@@ -1,6 +1,6 @@
-// Script for the hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
+// JavaScript para manejar el menú hamburguesa
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
