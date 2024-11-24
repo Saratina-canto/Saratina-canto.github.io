@@ -7,16 +7,23 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.8; /* Increase line height for better readability */
     color: #333;
     background-color: #f9f9f9;
+    font-size: 1rem; /* Default font size for body text */
+}
+
+/* Make <p> text specifically larger */
+p {
+    font-size: 1.2rem; /* Increase font size of paragraphs */
+    line-height: 1.6; /* Slightly increase line height for better readability */
 }
 
 /* Header Styles */
 header {
     background: #222;
     color: #fff;
-    padding: 0.5rem 0; /* Reducir el padding en el header */
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -28,7 +35,7 @@ nav {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    padding: 0.5rem 0; /* Reducir el padding del nav */
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -41,7 +48,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem; /* Reducir el tamaño de la fuente en pc */
+    font-size: 1.1rem;
 }
 
 /* Hamburger Menu Styles */
@@ -70,11 +77,11 @@ nav ul.active {
 }
 
 nav ul li {
-    padding: 10px; /* Reducir padding de los li */
+    padding: 10px;
 }
 
 nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* Hero Section Styles */
@@ -90,7 +97,7 @@ nav ul li a {
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 8px;
     max-width: 80%;
@@ -100,13 +107,13 @@ nav ul li a {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 
@@ -114,7 +121,7 @@ nav ul li a {
     background-color: #007BFF;
     color: white;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -132,6 +139,11 @@ nav ul li a {
 }
 
 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -140,6 +152,7 @@ ul {
     list-style: disc;
     margin: 1rem 2rem;
     text-align: left;
+    font-size: 1.2rem;
 }
 
 /* Footer Styles */
@@ -164,13 +177,13 @@ footer {
 }
 
 .section-box h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .section-box p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
 }
 
@@ -183,21 +196,21 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem; /* Smaller heading on mobile */
+        font-size: 3rem;
     }
 
     .hero p {
-        font-size: 1rem; /* Smaller paragraph on mobile */
+        font-size: 1.2rem;
     }
 
     .btn-primary {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 8px 16px;
     }
 
     .hero-content {
-        max-width: 90%; /* More flexible width */
-        padding: 1rem; /* Less padding for mobile */
+        max-width: 90%;
+        padding: 1rem;
     }
 
     .hamburger {
@@ -207,7 +220,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%; /* Asegurar que el menú ocupe el 100% en pantallas pequeñas */
+        width: 100%;
     }
 
     nav ul.active {
@@ -224,21 +237,106 @@ footer {
     }
 
     nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2rem; /* Even smaller heading for small screens */
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 0.9rem; /* Smaller text on very small screens */
+        font-size: 1.1rem;
     }
 
     .btn-primary {
-        font-size: 0.9rem;
-        padding: 6px 12px; /* Adjust button size */
+        font-size: 1rem;
+        padding: 6px 12px;
     }
+}
+
+.large-text {
+    font-size: 1.6rem !important;
+    line-height: 1.8 !important;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+/* Image in Text */
+.text-photo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.vocalizacion {
+    margin-left: 0;
+    list-style-position: inside;
+    font-size: 1.5rem;
+}
+
+/* Basic table styling */
+.evaluation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.evaluation-table th, .evaluation-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.evaluation-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.evaluation-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.evaluation-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Container for the images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.image {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.image:last-child {
+    margin-right: 0;
 }
